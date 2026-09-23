@@ -1,0 +1,35 @@
+{
+  "name": "green-api-chat",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "type:check": "oxlint --type-aware --type-check",
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "check": "concurrently -n type:check,lint,format:check, \"npm:type:check\" \"npm:lint\" \"npm:format:check\""
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "ky": "2.1.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwindcss": "4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.2",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "6.1.1",
+    "concurrently": "10.0.5",
+    "oxfmt": "0.70.0",
+    "oxlint": "1.81.0",
+    "oxlint-tsgolint": "7.0.2002",
+    "typescript": "7.0.2",
+    "vite": "8.3.0"
+  }
+}

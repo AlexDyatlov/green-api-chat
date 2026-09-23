@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #2b7fff;
+}
+
+body {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
